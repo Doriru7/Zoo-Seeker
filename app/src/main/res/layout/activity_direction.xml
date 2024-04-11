@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/stepBack_btn2"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="stepBackClicked"
+        android:text="Step Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/direction_inf"
+        android:layout_width="289dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="20dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="52dp"
+        android:text="Next"
+        android:onClick="NextClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/distance_inf"
+        android:layout_width="178dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="13dp"
+        android:textSize="16dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/next_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/mock_btn"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:onClick="mockClicked"
+        android:text="Mock Location"
+        app:layout_constraintBottom_toTopOf="@+id/direction_inf"
+        app:layout_constraintEnd_toStartOf="@+id/style_button"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <Button
+        android:id="@+id/style_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:onClick="styleClicked"
+        android:text="Style"
+        app:layout_constraintBottom_toTopOf="@+id/direction_inf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="skipClicked"
+        android:text="Skip"
+        app:layout_constraintBottom_toTopOf="@+id/stepBack_btn2"
+        app:layout_constraintEnd_toStartOf="@+id/distance_inf"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
